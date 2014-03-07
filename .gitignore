@@ -1,4 +1,5 @@
 # Build and Release Folders
+CVS
 bin/
 bin-debug/
 bin-release/
