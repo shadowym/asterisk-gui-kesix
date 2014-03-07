@@ -1,0 +1,35 @@
+==================================================================================
+Release 1.0.3 date 15/10/2013
+==================================================================================
+Asterisk-Gui version from SVN--r5209 used as the base 
+Fixing:
+#Add : Dahdi group calculation fixed into pbx2.js BZ 8603
+
+==================================================================================
+Release 1.0.2 date 02/11/2012
+==================================================================================
+Asterisk-Gui version from SVN--r5209 used as the base 
+Fixing:
+#Add : Generation auto-provisioning files for phones models : Aastra, SNOM300, SNOM320, SNOM370, SNOM821.
+Aastra auto-provisioning is based into tftp-hpa package. Please check if the package is installed on th host system.
+
+	
+
+==================================================================================
+Release 1.0.1 date 15/10/2012
+==================================================================================
+Asterisk-Gui version from SVN--r5209 used as the base 
+Fixing:
+#Disable Advanced button in the Voice menus
+
+==================================================================================
+Release 1.0.0
+==================================================================================
+Asterisk-Gui version from SVN--r5209 used as the base 
+Fixing:
+#Queues edit delete all queus agents. This issue caused by ajam updateconfig action delete in the case if  an agent is not in the queue.
+#Voice Menus : Voice Menus , fixe double append after editing a Voice menu
+
+
+
+
