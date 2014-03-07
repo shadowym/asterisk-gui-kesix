@@ -3,6 +3,8 @@ CVS
 bin/
 bin-debug/
 bin-release/
+#
+sysinfo_output*
 
 # Other files and folders
 .settings/
