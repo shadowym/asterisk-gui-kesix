@@ -5,6 +5,7 @@ bin-debug/
 bin-release/
 #
 sysinfo_output*
+bkps
 
 # Other files and folders
 .settings/
