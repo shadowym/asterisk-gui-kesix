@@ -236,6 +236,7 @@ var edit_queue_apply = function(){
 			var u = new listOfSynActions('extensions.conf');
 			u.new_action( 'delete', 'default', 'exten', '' , parent.sessionData.pbxinfo.queues[cat].configLine );
 			u.new_action( 'append', ASTGUI.contexts.QUEUES, 'exten', configLine );
+			u.callActions();
 			delete parent.sessionData.pbxinfo.queues[cat].isOLDGUI ;
 		}
 
