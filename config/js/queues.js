@@ -259,14 +259,12 @@ var edit_queue_apply = function(){
 	//vassilux, the idea to delete each agent for keep the update action
 	var wazza = new listOfSynActions('queues.conf') ;
 	$('.'+ag_chkbxClass).each(function(a) {
-		//x.new_action('delete', cat, 'member', $(this).val() );
 		wazza.new_action('delete', cat, 'member', $(this).val() );
 		wazza.callActions();
 	});
-	//wazza.callActions();
+	
 	var ags = ASTGUI.domActions.get_checked(ag_chkbxClass) ;
 	ags.each( function(ag){
-		//alert("x.new_action append member " + JSON.stringify(ag));
 		x.new_action('append', cat, 'member', ag );
 		
 	});
