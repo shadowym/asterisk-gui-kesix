@@ -39,7 +39,7 @@ var HAS_ANALOGHARDWARE = true; var HAS_DIGITALHARDWARE = true;
 		// if the user does not have any hardware - always set parent.sessionData.REQUIRE_RESTART to false
 var SPANCOUNT_LOCATION = {}; // this object is used to store the number of spans found in each location Ex: SPANCOUNT_LOCATION['PCI Bus 02 Slot 04'] = 4;
 var portsSignalling = {};
-var echocans = {'mg2':'0', 'kb1':'1', 'sec':'2', 'sec2':'3', 'hpec':'4'};
+var echocans = {'mg2':'0', 'kb1':'1', 'sec':'2', 'sec2':'3', 'hpec':'4', 'oslec':'5'};
 
 var digital_miscFunctions = {
 	show_analog_signalling_form: function(a){ //digital_miscFunctions.show_analog_signalling_form()

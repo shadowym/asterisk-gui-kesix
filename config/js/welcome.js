@@ -146,6 +146,7 @@ var loadExtensions = function() {
 		}else{
 			var tmp_userstring = user;
 		}
+
 		var new_row = "<tr class=\"" + new_class.replace(/^ /,'') + "\">\n";
 
 		new_row += "<td><img src=\"images/refresh.png\" border=\"0\" id=\"exten_status_" + user + "\"></td>\n";
@@ -168,6 +169,7 @@ var loadExtensions = function() {
 				document.getElementById("exten_mailbox_" + user).innerHTML = '<font color=#888B8D> Messages : '
 					+ tmp_mails.count_new + '/' + tmp_mails.count_old + '</font>' ; 
 			} 
+			
 		}
 	};
 	var uidx = -1;

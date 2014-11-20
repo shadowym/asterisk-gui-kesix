@@ -712,6 +712,9 @@ var miscFunctions = {
 		} else {
 			var t = ASTGUI.cliCommand('module reload');
 		}
+		//ASTGUI.systemCmdWithOutput(“/bin/sed ‘/^$/d’ -i /etc/asterisk/users.conf”,function(a1){});
+        //ASTGUI.systemCmdWithOutput(“/bin/sed ‘/^$/d’ -i /etc/asterisk/extensions.conf”,function(b1){});
+
 		u.style.display = 'none';
 		top.cookies.remove('configFilesChanged');
 		ASTGUI.feedback({msg:'Asterisk Reloaded !!', showfor: 3 , color: '#5D7CBA', bgcolor: '#FFFFFF'}) ;

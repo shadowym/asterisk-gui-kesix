@@ -218,7 +218,8 @@ var edit_meetMe_apply = function(){
 	var new_passString = DOM_edit_Ext.value + ',' + DOM_edit_PinCode.value + ',' + DOM_edit_AdminPinCode.value ;
 
 	if( isNewBridge == false ){ // delete/update old bridge values
-		if( parent.sessionData.pbxinfo.conferences[EDIT_BRIDGE]['configOptions'] ){
+		//if( parent.sessionData.pbxinfo.conferences[EDIT_BRIDGE]['configOptions'] ){
+		if( parent.sessionData.pbxinfo.conferences['default'] && parent.sessionData.pbxinfo.conferences['default']['configOptions'] ) { // default context must exists...
 			u.new_action('delete', ASTGUI.contexts.CONFERENCES, 'exten', '', parent.sessionData.pbxinfo.conferences[EDIT_BRIDGE]['configOptions'] );
 		}
 		if( parent.sessionData.pbxinfo.conferences[EDIT_BRIDGE]['adminOptions'] ){

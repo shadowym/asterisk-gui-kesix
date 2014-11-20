@@ -206,7 +206,9 @@ pbx.conferences.load = function() {
 
 		var exten = ASTGUI.parseContextLine.getExten(line);
 		var options = line.afterChar('=');
-		var params = options.betweenXY('|',')');
+
+		var params = options.afterChar('(');
+		var params = params.betweenXY(',',')');
 		
 		if (params.contains('a') && params.contains('A')) {
 			exten = ASTGUI.parseContextLine.getArgs(line)[0];
