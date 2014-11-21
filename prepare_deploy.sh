@@ -37,9 +37,9 @@ cp -aR install-sh "$DEPLOY_DIR"
 cp -aR LICENSE "$DEPLOY_DIR"
 
 
-#tar cvzf "${DEPLOY_FILE_NAME}" "${DEPLOY_DIR}"
+tar cvzf "${DEPLOY_FILE_NAME}" "${DEPLOY_DIR}"
 
-#rm -rf "$DEPLOY_DIR"
+rm -rf "$DEPLOY_DIR"
 
 
 echo "Deploy build complete."
